@@ -61,13 +61,40 @@ console.log("Hello");
 // console.log("!c = ", !c);
 
 //! 6. Conditional Statement
-let mode = "dark";
+// let mode = "light";
 
-let color;
-if (mode === "dark") {
-  color = "black";
-}
-if (mode === "light") {
-  color = "white";
-}
-console.log("color : ", color);
+// let color;
+// if (mode === "dark") {
+//   color = "black";
+// }
+// if (mode === "light") {
+//   color = "white";
+// }
+
+// if (mode === "dark") {
+//   color = "black";
+// } else {
+//   color = "white";
+// }
+
+// console.log("color : ", color);
+
+//! 7. Ternary Operators in JS
+//? condition ? true output : false output;
+//* age >= 18 ? "adult" : "not adult";
+
+// let age = 15;
+// let result = age >= 18 ? "adult" : "not adult";
+// console.log(result);
+
+//! 8. Practice Question
+//? prompt using for input
+// let fullName = prompt("Hello");
+// console.log(fullName);
+
+// let num = prompt("Enter a number");
+// if (num % 5 === 0) {
+//   console.log("Yes this number is divided by 5");
+// } else {
+//   console.log("No this number is not divided by 5");
+// }
