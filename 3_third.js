@@ -83,9 +83,43 @@
 // console.log(str1.length);
 
 //! 2. Temaplate literals in JS
-const obj = {
-  item: "pen",
-  price: 10,
-};
-let specialString = `This is template literal ${obj.item} and ${obj.price}`;
-console.log(specialString);
+// const obj = {
+//   item: "pen",
+//   price: 10,
+// };
+// String Interpolation : ${expression} : ${1 + 2 + 3}
+// let specialString = `This is template literal ${obj.item} and ${obj.price}`;
+// console.log(specialString);
+//* Escape Characters
+// let str = "ab\tcd"; // single \t
+// console.log("String\nExpression"); // next line
+// console.log("String\tExpression"); // tab space
+// console.log(str.length); //* 5
+
+//! 3. String Methods in JS
+// let str = "         ABC ef      ";
+//* These method not change original value : is Immutable (ChangeX)
+// console.log(str.toUpperCase()); //ABC
+// console.log(str);
+// console.log(str.toLowerCase()); // abc
+// console.log(str.trim()); //* removes whitespaces
+//* More Methods
+// str.slice(start, end?); //* Return Part of string
+// str.concat(str2); //* Joins str2 with str1
+// str.replace(searchVal, newVal);
+// str.charAt(idx)
+// let str = "0000";
+// let stri = "789";
+// console.log(str + stri);
+// console.log(str.replaceAll("0", "-1"));
+
+// let str = "ILOVEJS";
+// str = str.replace("I", "A");
+// console.log(str);
+
+//? Prompt user enter fullName
+//? eg : amitKumar userName : @amitKumar(str.length)
+
+let str = prompt("Enter the full name without spaces");
+str = `@${str}${str.length}`;
+console.log(str);
