@@ -93,7 +93,7 @@ let items = [250, 645, 300, 900, 50];
 
 //? Lets Practice Q1 : compaines delete from 1st, add uber -> Ola
 //? add amazon at end
-let compaines = ["Bloomberg", "Microsoft", "Google", "Uber", "IBM", "Netflix"];
+// let compaines = ["Bloomberg", "Microsoft", "Google", "Uber", "IBM", "Netflix"];
 // console.log(compaines.splice(3, 1, "Ola"));
 // console.log(compaines);
-console.log(compaines.push("Amazon"));
+// console.log(compaines.push("Amazon"));
