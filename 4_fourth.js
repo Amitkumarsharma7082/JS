@@ -4,7 +4,7 @@
 //* Collections of items
 
 // Create Array :
-let heroes = ["IronMan", "Hulk", "Thor", "CaptainAmerica"];
+// let heroes = ["IronMan", "Hulk", "Thor", "CaptainAmerica"];
 // let marks = [97, 92, 82, 75];
 // typeof marks 'object'
 // console.log(heroes);
@@ -56,7 +56,37 @@ let items = [250, 645, 300, 900, 50];
 // push(); // add at last
 // pop(); // delete from end & return
 // toString(); // convert array into string
-let foodItems = ["carrot", "apple", "lichi", "tomato"];
-console.log(foodItems);
-foodItems.pop(); // single item delete
-console.log(foodItems);
+
+// let foodItems = ["carrot", "apple", "lichi", "tomato"];
+// console.log(foodItems);
+// foodItems.pop(); // single item delete
+// console.log(foodItems);
+
+// let foodItems = ["carrot", "apple", "lichi", "tomato"];
+// console.log(foodItems);
+// console.log(foodItems.toString()); // newString return
+// console.log(foodItems); // original
+
+//! 4. More Methods arrays in JS
+// Concat(); // joins multiple arrays & return results
+// unshift(); // add to start (push)
+// shift(); // delete from start & return (pop)
+// Slice(); // return a piece of the array
+// Splice(); // change original array (add, remove, replace)
+
+// let marvelHeroes = ["ironMan", "thor", "spiderMan"];
+// let dcHeroes = ["superMan", "Batman"];
+
+// marvelHeroes.shift();
+// let heroes = marvelHeroes.concat(dcHeroes);
+// console.log(heroes);
+
+// let marvelHeroes = ["ironMan", "thor", "spiderMan", "Dr. Strange", "Antman"];
+// console.log(marvelHeroes);
+// console.log(marvelHeroes.slice(1)); // (1,4) not include
+
+// let arr = [0, 1, 2, 3, 4, 5, 6];
+// console.log(arr.splice(2, 2, 101, 102)); // return delete items
+// console.log(arr);
+// console.log(marvelHeroes.splice(2, 1, "Groot")); // return 'spiderMan'
+// console.log(marvelHeroes);
