@@ -4,3 +4,10 @@
   background-color: black;
   color: brown;
 }
+.div {
+  height: 100%;
+  width: 9%;
+  color: brown;
+  border: 4px;
+  border-radius: 4px;
+}
