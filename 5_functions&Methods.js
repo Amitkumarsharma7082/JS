@@ -46,18 +46,59 @@
 // arrowMultiple(8, 9);
 
 //? function return count vowels
-const countVowels = (str) => {
-  let count = 0;
-  for (const char of str) {
-    if (
-      char === "a" ||
-      char === "e" ||
-      char === "i" ||
-      char === "o" ||
-      char === "u"
-    ) {
-      count++;
-    }
-  }
-  return count;
-};
+// const countVowels = (str) => {
+//   let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+
+//! 3. For-Each Loop in Arrays
+let array = ["Delhi", "Pune"];
+// array.forEach(function printVal(val) {
+// callBack
+//   console.log(val);
+// });
+
+// array.forEach((val, i, arr) => {
+//   console.log(val.toUpperCase(), i, arr); // 3 parameters pass
+// });
+// Theory Question higher order function forEach or methods dusre function parameter and return karte
+
+//? Let's Practice arr = [1, 2, 3, 4, 5] square of each value using forEach() ?
+// let arr = [2, 3, 4, 5, 67, 32, 39];
+// let calculateSquare = (val) => {
+//   console.log(val ** 2);
+// };
+// arr.forEach(calculateSquare);
+
+//! 4. Some more Array Methods
+
+//arr.map
+let arr = [2, 3, 4, 5];
+// let newArr = arr.map((val) => {
+//   return val * 2;
+// });
+// console.log(newArr);
+
+// //arr.filter
+// let evenArr = arr.filter((value) => {
+//   return value % 2 == 0;
+// });
+// console.log(evenArr);
+
+//arr.reduce : it reduce single value
+let sum = 0;
+let calSum = arr.reduce((res, cur) => {
+  return res + cur;
+});
+console.log(calSum);
