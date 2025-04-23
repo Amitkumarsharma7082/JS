@@ -1,0 +1,12 @@
+#heading {
+  color: red;
+  text-decoration: line-through;
+  background-color: beige;
+}
+body {
+  background-color: pink;
+}
+button {
+  background-color: blue;
+  color: white;
+}
