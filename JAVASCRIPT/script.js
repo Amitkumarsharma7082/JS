@@ -30,3 +30,25 @@
 // console.dir(allElements); // return NodeList(3)
 
 //! 2. DOM Manipulation : Properties
+//* get, set (change and update)
+//* a. tag name : return tag name firstElements.tag
+//* b. innerText : return all its child node
+// console.dir(document.body.firstChild[1]); // #text
+// DOM tree : 1.text node, 2.comments node, 3.elements node
+
+// let nodes = document.querySelector("div").children;
+// console.dir(nodes); HTMLCollection(2) 0: div 1: p
+
+// let div = document.querySelector("div");
+// console.dir(div);
+// div.innerText; div.textContent;
+
+// let heading = document.querySelector("h1");
+// console.dir(heading);
+
+//? Let's Practice : Hello Javascript append "i love" ?
+let change = document.querySelector("h2");
+change.innerText = "I love " + change.innerText; // concat
+
+let clss = document.querySelectorAll(".box");
+clss[0].innerText = "hey Hey";
