@@ -46,3 +46,20 @@
 // document.body.appendChild(fragment);
 
 //? Let's Practice
+let newBtn = document.createElement("button");
+newBtn.innerText = "click mee";
+let body = document.querySelector("body");
+body.prepend(newBtn);
+body.style.backgroundColor = "red";
+newBtn.style.color = "purple";
+
+//* classlist
+// const div = document.createElement("div");
+// div.className = "foo";
+
+// // our starting state: <div class="foo"></div>
+// console.log(div.outerHTML);
+
+// // use the classList API to remove and add classes
+// div.classList.remove("foo");
+// div.classList.add("another-class");
