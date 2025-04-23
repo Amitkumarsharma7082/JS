@@ -84,7 +84,7 @@ let array = ["Delhi", "Pune"];
 //! 4. Some more Array Methods
 
 //arr.map
-let arr = [2, 3, 4, 5];
+// let arr = [2, 3, 4, 5];
 // let newArr = arr.map((val) => {
 //   return val * 2;
 // });
@@ -97,8 +97,33 @@ let arr = [2, 3, 4, 5];
 // console.log(evenArr);
 
 //arr.reduce : it reduce single value
-let sum = 0;
-let calSum = arr.reduce((res, cur) => {
-  return res + cur;
+// let sum = 0;
+// let calSum = arr.reduce((res, cur) => {
+//   return res + cur;
+// });
+// console.log(calSum);\
+
+//? Let's Practice Question: 90+ score show in given array ?
+// let arr = [90, 89, 99, 94, 78, 88];
+
+// let newArr = arr.filter((val) => {
+//   return val > 90;
+// });
+// console.log(newArr);
+
+//? user given value like 5 : create array = [1, 2, 3, 4, 5] ?
+
+let number = prompt("Enter a number : ");
+let arr = [];
+
+for (let i = 1; i <= number; i++) {
+  arr[i - 1] = i;
+}
+let factorial = arr.reduce((res, curr) => {
+  return res * curr;
 });
-console.log(calSum);
+let sum = arr.reduce((res, curr) => {
+  return res + curr;
+});
+console.log("factorial : ", factorial);
+console.log("sum : ", sum);
