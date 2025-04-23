@@ -35,12 +35,29 @@
 // console.log(val);
 
 //! 2. Arrow Function in JS
-const arrowSum = (a, b) => {
-  console.log(a + b);
-};
-arrowSum(5, 9);
+// const arrowSum = (a, b) => {
+//   console.log(a + b);
+// };
+// arrowSum(5, 9);
 
-const arrowMultiple = (a, b) => {
-  console.log(a * b);
+// const arrowMultiple = (a, b) => {
+//   console.log(a * b);
+// };
+// arrowMultiple(8, 9);
+
+//? function return count vowels
+const countVowels = (str) => {
+  let count = 0;
+  for (const char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
 };
-arrowMultiple(8, 9);
