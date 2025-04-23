@@ -38,3 +38,17 @@
 //   console.log("button was clicked - handler4");
 // });
 // btn.removeEventListener("click", handler3);
+
+//? Let's Practice
+let btn = document.querySelector("#btn");
+let curMode = "light"; // dark
+btn.addEventListener("click", () => {
+  if (curMode === "light") {
+    curMode = "dark";
+    document.querySelector("body").style.backgroundColor = "black";
+  } else {
+    curMode = "light";
+    document.querySelector("body").style.backgroundColor = "white";
+  }
+  console.log(curMode);
+});
